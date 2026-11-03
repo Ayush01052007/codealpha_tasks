@@ -1,0 +1,167 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101820;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.header h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.header h2 span {
+    color: #00c9a7;
+}
+
+.header p {
+    color: #b8c4ce;
+    font-size: 14px;
+}
+
+/* Calculator Container */
+.calculator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Calculator Box */
+.calculator {
+    width: 100%;
+    max-width: 360px;
+    background: #17232e;
+    padding: 22px;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Display */
+.display {
+    min-height: 110px;
+    background: #101820;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+.previous-operand {
+    min-height: 25px;
+    color: #9eabb7;
+    font-size: 16px;
+}
+
+.current-operand {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Buttons Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Common Button Style */
+.btn {
+    height: 65px;
+    border: none;
+    border-radius: 12px;
+    background: #263642;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    background: #3b5262;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Function Buttons */
+.function {
+    background: #344653;
+    color: #00c9a7;
+}
+
+.function:hover {
+    background: #465e6d;
+}
+
+/* Operator Buttons */
+.operator {
+    background: #087f72;
+    color: #ffffff;
+}
+
+.operator:hover {
+    background: #0a9e8e;
+}
+
+/* Equal Button */
+.equal {
+    background: #00c9a7;
+    color: #101820;
+}
+
+.equal:hover {
+    background: #16e2bf;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    color: #b8c4ce;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .calculator {
+        padding: 15px;
+    }
+
+    .buttons {
+        gap: 8px;
+    }
+
+    .btn {
+        height: 58px;
+        font-size: 18px;
+    }
+
+    .current-operand {
+        font-size: 30px;
+    }
+}

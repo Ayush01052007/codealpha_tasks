@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery | Ayush Yadav</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Image<span>Gallery.</span></a>
+        <p>Explore the beauty of the world through images.</p>
+    </header>
+
+    <main class="container">
+        <section class="gallery-heading">
+            <h1>My Image Gallery</h1>
+            <p>A collection of beautiful moments and places.</p>
+        </section>
+
+        <!-- Category Filters -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="architecture">Architecture</button>
+            <button class="filter-btn" data-filter="animals">Animals</button>
+        </div>
+
+        <!-- Image Gallery -->
+        <div class="gallery">
+
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=800" alt="Sunrise over a green landscape">
+                <div class="image-info">
+                    <h3>Beautiful Sunrise</h3>
+                    <p>Nature</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=800" alt="Modern architecture">
+                <div class="image-info">
+                    <h3>Modern Building</h3>
+                    <p>Architecture</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="animals">
+                <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=800" alt="Fox in the wild">
+                <div class="image-info">
+                    <h3>Wild Fox</h3>
+                    <p>Animals</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800" alt="Mountain landscape">
+                <div class="image-info">
+                    <h3>Mountain View</h3>
+                    <p>Nature</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800" alt="White modern house">
+                <div class="image-info">
+                    <h3>Modern House</h3>
+                    <p>Architecture</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="animals">
+                <img src="https://images.unsplash.com/photo-1549366021-9f761d450615?w=800" alt="Elephant in nature">
+                <div class="image-info">
+                    <h3>Gentle Elephant</h3>
+                    <p>Animals</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800" alt="Green forest">
+                <div class="image-info">
+                    <h3>Green Forest</h3>
+                    <p>Nature</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="architecture">
+                <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=800" alt="City architecture">
+                <div class="image-info">
+                    <h3>City Design</h3>
+                    <p>Architecture</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="animals">
+                <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=800" alt="Golden dog">
+                <div class="image-info">
+                    <h3>Golden Dog</h3>
+                    <p>Animals</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="close-btn" id="closeBtn" aria-label="Close">&times;</button>
+        <button class="nav-btn prev-btn" id="prevBtn" aria-label="Previous image">&#10094;</button>
+
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+            <h3 id="lightboxTitle"></h3>
+            <p id="lightboxCategory"></p>
+        </div>
+
+        <button class="nav-btn next-btn" id="nextBtn" aria-label="Next image">&#10095;</button>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Ayush Yadav | CodeAlpha Internship Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
